@@ -1,8 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The function is an alternate to ths solve() built-in to R 
+## It creates a cache for the value of the inverse matrix so that it can be reused later without
+## using any extra resources
 
-## Write a short comment describing this function
-
+## Make a squaren matrix using the makeCacheMatrix()  function and save it under any name
+## Then use cacheSolve to calculate its inverse. 
+## any subsequent call of the cacheSolve of the vector will be loaded from cache
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
     set <- function(y) {
